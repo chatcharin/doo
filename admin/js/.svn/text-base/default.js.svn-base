@@ -1,0 +1,12 @@
+$(document).ready(function(){
+                    
+          $("#postLocation select[name='province']").change(function(){
+                    ListAmphur($(this).val(),'#postAmphur');
+          });
+          $("#postLocation select[name='amphur']").change(function(){
+                    ListTambon($(this).val(),'#postTambon');
+          });
+          
+          
+});
+          

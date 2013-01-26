@@ -1,0 +1,17 @@
+@charset "utf-8";
+#web {
+	font-family: Tahoma;
+	font-size: 34px;
+	font-weight: bold;
+	color: #FFF;
+	text-decoration: none;
+	text-align: center;
+	float: left;
+	height: auto;
+	width: 801px;
+	left: 15px;
+	right: auto;
+	top: auto;
+	position: absolute;
+	bottom: 10px;
+}

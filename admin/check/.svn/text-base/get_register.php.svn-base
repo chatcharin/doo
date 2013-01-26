@@ -1,0 +1,29 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+          <head>
+                    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+          </head>
+          <body>
+                    
+                    <?php
+
+                    function insertdata() {
+                              $email = $_POST['email'];
+                              $pass = $_POST['password'];
+                              $name = $_POST['name'];
+                              $tel = $_POST['tel'];
+                              include '../config.php';
+                              $sql = "insert into tb_users(email,pass,name,tel) values('$email','$pass','$name','$tel')";
+                              $query = mysql_db_query($db_name, $sql);
+                              if ($query)
+                                        echo "สมัครสมาชิกเรียบร้อยแล้ว !";
+                              else
+                                        echo "ข้อมูลไม่ถูกต้อง กรุณาลองใหม่อีกครั้ง !";
+                              mysql_close();
+                    }
+
+                    if ($_POST['password'] != '' && $_POST['repassword'] != '' && $_POST['email'] != '' && $_POST['tel'] != '')
+                              insertdata();
+                    ?>
+          </body>
+</html>

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report name" language="groovy" pageWidth="595" pageHeight="842" columnWidth="575" leftMargin="10" rightMargin="10" topMargin="15" bottomMargin="15">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="118"/>
+	<parameter name="gen_id" class="java.lang.Integer">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<queryString language="SQL">
+		<![CDATA[SELECT
+     tb_image.`id_pho` AS tb_image_id_pho,
+     tb_image.`name_img` AS tb_image_name_img,
+     tb_general.`id_gen` AS tb_general_id_gen,
+     tb_general.`id_user` AS tb_general_id_user,
+     tb_general.`topic` AS tb_general_topic,
+     tb_general.`price` AS tb_general_price,
+     tb_general.`id_unit` AS tb_general_id_unit,
+     tb_general.`rai` AS tb_general_rai,
+     tb_general.`ngan` AS tb_general_ngan,
+     tb_general.`tarang` AS tb_general_tarang,
+     tb_general.`date` AS tb_general_date,
+     tb_general.`outdate` AS tb_general_outdate,
+     tb_general.`counter` AS tb_general_counter,
+     tb_contact.`id_con` AS tb_contact_id_con,
+     tb_contact.`name` AS tb_contact_name,
+     tb_contact.`email` AS tb_contact_email,
+     tb_contact.`tel` AS tb_contact_tel,
+     tb_general.`id_type` AS tb_general_id_type,
+     tb_general.`id_class` AS tb_general_id_class,
+     tb_location.`id_loc` AS tb_location_id_loc,
+     tb_location.`address` AS tb_location_address,
+     tb_location.`road` AS tb_location_road,
+     tb_location.`soy` AS tb_location_soy,
+     tb_location.`province` AS tb_location_province,
+     tb_location.`amphur` AS tb_location_amphur,
+     tb_location.`tambon` AS tb_location_tambon,
+     tb_location.`detail` AS tb_location_detail,
+     tb_location.`lat` AS tb_location_lat,
+     tb_location.`lng` AS tb_location_lng,
+     tb_detail.`id_detail` AS tb_detail_id_detail,
+     tb_detail.`detail` AS tb_detail_detail,
+     tb_contact.`id_gen` AS tb_contact_id_gen,
+     tb_image.`id_gen` AS tb_image_id_gen,
+     tb_location.`id_gen` AS tb_location_id_gen,
+     tb_detail.`id_gen` AS tb_detail_id_gen
+FROM
+     `tb_general` tb_general INNER JOIN `tb_contact` tb_contact ON tb_general.`id_gen` = tb_contact.`id_gen`
+     INNER JOIN `tb_image` tb_image ON tb_general.`id_gen` = tb_image.`id_gen`
+     INNER JOIN `tb_location` tb_location ON tb_general.`id_gen` = tb_location.`id_gen`
+     INNER JOIN `tb_detail` tb_detail ON tb_general.`id_gen` = tb_detail.`id_gen`]]>
+	</queryString>
+	<field name="tb_image_id_pho" class="java.lang.Integer"/>
+	<field name="tb_image_name_img" class="java.lang.String"/>
+	<field name="tb_general_id_gen" class="java.lang.Integer"/>
+	<field name="tb_general_id_user" class="java.lang.Integer"/>
+	<field name="tb_general_topic" class="java.lang.String"/>
+	<field name="tb_general_price" class="java.lang.String"/>
+	<field name="tb_general_id_unit" class="java.lang.Integer"/>
+	<field name="tb_general_rai" class="java.lang.Integer"/>
+	<field name="tb_general_ngan" class="java.lang.Integer"/>
+	<field name="tb_general_tarang" class="java.lang.Integer"/>
+	<field name="tb_general_date" class="java.lang.String"/>
+	<field name="tb_general_outdate" class="java.lang.String"/>
+	<field name="tb_general_counter" class="java.lang.String"/>
+	<field name="tb_contact_id_con" class="java.lang.Integer"/>
+	<field name="tb_contact_name" class="java.lang.String"/>
+	<field name="tb_contact_email" class="java.lang.String"/>
+	<field name="tb_contact_tel" class="java.lang.String"/>
+	<field name="tb_general_id_type" class="java.lang.Integer"/>
+	<field name="tb_general_id_class" class="java.lang.Integer"/>
+	<field name="tb_location_id_loc" class="java.lang.Integer"/>
+	<field name="tb_location_address" class="java.lang.String"/>
+	<field name="tb_location_road" class="java.lang.String"/>
+	<field name="tb_location_soy" class="java.lang.String"/>
+	<field name="tb_location_province" class="java.lang.String"/>
+	<field name="tb_location_amphur" class="java.lang.String"/>
+	<field name="tb_location_tambon" class="java.lang.String"/>
+	<field name="tb_location_detail" class="java.lang.String"/>
+	<field name="tb_location_lat" class="java.lang.Float"/>
+	<field name="tb_location_lng" class="java.lang.Float"/>
+	<field name="tb_detail_id_detail" class="java.lang.Integer"/>
+	<field name="tb_detail_detail" class="java.lang.String"/>
+	<field name="tb_contact_id_gen" class="java.lang.Integer"/>
+	<field name="tb_image_id_gen" class="java.lang.Integer"/>
+	<field name="tb_location_id_gen" class="java.lang.Integer"/>
+	<field name="tb_detail_id_gen" class="java.lang.Integer"/>
+	<filterExpression><![CDATA[$P{gen_id}==$F{tb_general_id_gen}]]></filterExpression>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="164" splitType="Stretch">
+			<rectangle>
+				<reportElement mode="Opaque" x="0" y="129" width="575" height="35" forecolor="#FF0000" backcolor="#FF0000"/>
+			</rectangle>
+			<staticText>
+				<reportElement mode="Opaque" x="0" y="0" width="575" height="129" forecolor="#FFFFFF" backcolor="#FF0000"/>
+				<textElement textAlignment="Center" verticalAlignment="Bottom">
+					<font fontName="Tahoma" size="100" isBold="true" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[ขายด่วน]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="412" y="5" width="158" height="39" forecolor="#FF0000" backcolor="#FFFFFF"/>
+				<textElement textAlignment="Center">
+					<font fontName="Tahoma" size="32" isBold="true" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+				</textElement>
+				<text><![CDATA[FOR SALE]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="5" y="130" width="103" height="34" forecolor="#FFFFFF" backcolor="#FF0000"/>
+				<textElement textAlignment="Left" verticalAlignment="Bottom">
+					<font fontName="Tahoma" size="28" isBold="true"/>
+				</textElement>
+				<text><![CDATA[CODE :]]></text>
+			</staticText>
+			<rectangle radius="10">
+				<reportElement x="107" y="132" width="150" height="29"/>
+			</rectangle>
+			<textField>
+				<reportElement x="108" y="132" width="149" height="29"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Tahoma" size="22" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{tb_general_id_gen}]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<detail>
+		<band height="144" splitType="Stretch">
+			<image>
+				<reportElement x="195" y="6" width="178" height="132"/>
+				<imageExpression><![CDATA[$F{tb_image_name_img}]]></imageExpression>
+			</image>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

@@ -1,0 +1,76 @@
+@charset "utf-8";
+#pic {
+	font-family: Tahoma;
+	color: #FFF;
+	text-decoration: none;
+	background-color: #000;
+	text-align: center;
+	float: left;
+	height: 308px;
+	width: 345px;
+	left: 15px;
+	top: 15px;
+	right: auto;
+	bottom: auto;
+	position: absolute;
+}
+#pic1{
+	font-family: Tahoma;
+	color: #FFF;
+	text-decoration: none;
+	background-color: #000;
+	text-align: center;
+	float: left;
+	height: 150px;
+	width: 210px;
+	left: 370px;
+	top: 15px;
+	right: auto;
+	bottom: auto;
+	position: absolute;
+}
+#pic2{
+	font-family: Tahoma;
+	color: #FFF;
+	text-decoration: none;
+	background-color: #000;
+	text-align: center;
+	float: left;
+	height: 150px;
+	width: 210px;
+	left: 587px;
+	top: 15px;
+	right: auto;
+	bottom: auto;
+	position: absolute;
+}
+#pic3{
+	font-family: Tahoma;
+	color: #FFF;
+	text-decoration: none;
+	background-color: #000;
+	text-align: center;
+	float: left;
+	height: 150px;
+	width: 210px;
+	left: 370px;
+	top: 172px;
+	right: auto;
+	bottom: auto;
+	position: absolute;
+}
+#pic4{
+	font-family: Tahoma;
+	color: #FFF;
+	text-decoration: none;
+	background-color: #000;
+	text-align: center;
+	float: left;
+	height: 150px;
+	width: 210px;
+	left: 587px;
+	top: 172px;
+	right: auto;
+	bottom: auto;
+	position: absolute;
+}

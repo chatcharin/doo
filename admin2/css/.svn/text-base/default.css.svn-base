@@ -1,0 +1,19 @@
+
+/*REGISTER*/
+#form_register input[type='text'],input[type='password']{
+          width:230px;
+          height: 23px;
+          font-family: microsoft Sans Serif;
+          font-size: 13px;
+}
+label.error { 
+          float: none;
+          color: #c33; 
+          padding-left: .5em; 
+          vertical-align: top; 
+}
+#form_register em {
+          font-weight: bold;
+          color: red;
+          padding-left: 5px;
+}

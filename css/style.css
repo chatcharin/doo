@@ -1,0 +1,398 @@
+@font-face {
+ font-family: MyCustomFont;
+ src: url("thaisanslite_r1.eot") ;/* EOT file for IE */
+}
+@font-face {
+ font-family: MyCustomFont;
+ src: url("thaisanslite_r1.ttf") /* TTF file for CSS3 browsers */
+ }
+ body{
+	background-color:#1c1c22;
+	padding:0 ;
+	margin:0;
+	font-family:Verdana, Geneva, sans-serif;
+}
+.clear{clear:both; padding:0; margin:0;}
+hr{
+	background:url(../images/hr.gif)  repeat-x;
+	height:2px;
+	border:0;
+	padding:0; margin:0;
+	
+}
+h5{	
+	font-family: MyCustomFont;
+	font-size:22px; 
+	padding:0;
+	margin:0;
+	color:#FFFFFF;
+	font-weight:normal;
+}
+h4{	
+	font-family: MyCustomFont;
+	font-size:25px; 
+	padding:0;
+	margin:0;
+	color:#FFFFFF;
+	text-decoration:underline ;
+	margin:10px 0; 
+}
+h3{	
+	font-family: MyCustomFont;
+	font-size:40px; 
+	padding:0;
+	margin:0;
+}
+h2{
+	font-family: MyCustomFont;
+	font-size:50px;
+	padding:0;
+	margin:0; 
+}
+input[type="radio"],input[type="checkbox"] {
+font-size: 15px;
+margin: 0.2em;
+vertical-align:middle;
+}
+
+input[type="text"],input[type="password"] {
+font-size: 15px;
+margin: 0.2em;
+padding: 0.1em;
+width:155px;
+}
+
+input[type="submit"],input[type="button"],input[type="reset"] {
+color: #ffffff;
+font-size:16px;
+background:url(../images/button.png) repeat-x #537e2e;
+border:1px solid #22214d;
+height:27px;
+padding:0 20px;
+margin: 0.2em;
+
+}
+
+input[type="submit"]:hover {
+cursor: pointer;
+}
+
+input[type="file"] {
+border:0.1em solid #999999;
+font-size:15px;
+margin: 0.2em;
+vertical-align:middle;
+}
+select {
+font-size:15px;
+margin: 0.2em;
+padding: 0.1em;
+width:160px;
+}
+
+textarea {
+background-color: #ffffff;
+border: #999999 solid 0.1em;
+font-size:15px;
+margin: 0.2em;
+padding: 0.1em;
+}
+
+/* hearder web*/
+#top{
+	height:60px;
+	background-color:#385b9c;
+	padding:0 ;
+	margin:0;
+}
+#header{
+	width:980px;
+	margin:0 auto;
+}
+#home{
+	width:173px; 
+	height:60px; 
+	float: left;
+	margin:0 40px 0 45px;
+}
+#logo {
+	background-image:url(../images/doo_home_logo.png);
+	float: left;
+	height: 60px;
+	text-indent: -9000px;
+	width: 173px;
+}
+#top_menu{ 
+	width:700px; 
+	height:60px;
+	float:left;
+}
+.search{
+	background-color:#2c477a;
+	padding:10px;
+	color:#FFFFFF;
+}
+#content_search{
+	width:600px;
+	margin:0 auto;
+	font-family: MyCustomFont;
+	font-size:25px; 
+}
+.post{
+	background-color:#2c477a;
+	padding:10px;
+	color:#FFFFFF;
+}
+#content_post{
+	width:620px;
+	margin:0 auto;	
+}
+#content_login{
+	width:350px;
+	font-size:15px;
+	float:left;
+	
+}
+#content_regis{
+	width:250px;
+	font-size:15px;
+	float:left;
+	background:url(../images/vr2.gif) repeat-y left;
+	min-height:100px;
+	padding:20px 10px;
+	text-align:center;
+}
+
+
+#content_post a{
+	color:#fff;
+	font-size:12px;
+	
+}
+
+/* center web*/
+#wrap{
+	width:980px;
+	margin:10px auto;
+}
+#left{
+	width:250px;
+	margin:0 10px  10px 0;
+	color:#FFFFFF;
+	float:left;
+}
+#content{
+	width:720px;
+	margin:0 0  10px 0;
+	float:left;
+}
+.block{ 
+	display:block;
+}
+.block :hover{
+	background-color:#2a2a32;
+}
+.block_photo{
+	float:left;
+	margin:5px 10px 5px 0;
+	overflow:hidden;
+
+}
+.block_detail{
+	float:left;
+	width:500px;
+	margin:5px 0;
+}
+.title_detail{
+	font-size:15px;
+	font-weight:bold;
+	color:#FFFFFF;
+}
+.sub_detail{
+	font-size:12px;
+	color:#808a9b;
+}
+.block_price{
+	color:#FF0000;
+	font-size:12px;
+	font-weight:bold;
+}
+.block_type{
+	color:#4c4c57;
+	position: absolute;
+	font-family: MyCustomFont;
+	font-size:80px;
+	text-align:right;
+	margin:-105px 0 0 450px;
+}
+
+#view{
+	width:700px;
+	margin:0 0  10px 0;
+	background-color:#2a2a32;
+	float:left;
+	padding:10px;
+}
+.title_view{
+	font-size:26px;
+	font-family: MyCustomFont;
+	color:#FFFFFF;
+	}
+.type_view{
+	font-size:80px;
+	font-family: MyCustomFont;
+	color:#4c4c57;
+	position:absolute; margin:30px 0 0 580px;
+}
+.label_view, .text_view{
+	font-size:13px;
+	color:#FFFFFF;
+	display: inline-block;
+}
+.label_view{
+	width:100px;
+	text-align:right;
+}
+
+.text_view{
+	width:480px;
+	margin:0 0 0 10px;
+}
+.price_view{
+	width:480px;
+	margin:0 0 0 10px;
+	color:#FF0000;
+	font-size:14px;
+	font-weight:bold;
+}
+.detail_view{
+	width:600px;
+	margin:0 0 10px 50px;
+	display: inline-block;
+	font-size:13px;
+	color:#FFFFFF;
+}
+/* footer web*/
+#lower{
+	width:980px;
+	margin:0 auto;
+}
+#footer{
+	background:#003300;
+	width:980px;
+	margin:10px auto;
+}
+.col1,.col2,.col3{
+	width:235px;
+	padding:0 5px;
+	float:left;
+	background:#006633;
+	color:#4c4c57;
+	 background:url(../images/vr.gif) repeat-y right ;
+	 min-height:170px;
+}
+.col4{
+	width:235px;
+	padding:5px;
+	float:left;
+	color:#4c4c57;
+}
+.col1 a,.col2 a,.col3 a,.col4 a{
+	font-size:12px;
+	color:#4c4c57;
+}
+.col1 a:hover,.col2 a:hover,.col3 a:hover,.col4 a:hover{
+	font-size:12px;
+	color:#fff;
+}
+.f_ink{
+width:115px;
+display:block;
+float:left;
+}
+
+
+/* menu top */
+#menu {
+	list-style:none;
+	width:720px;
+	height:41px;
+	float:left;
+	padding:0;
+	margin:21px 0 0 0;
+}
+#menu li {
+	float:left;
+	display:block;
+	text-align:center;
+	position:relative;
+	padding: 0 10px;
+	border:none;
+
+	
+}
+
+#menu li:hover {
+	background: #2c477a;
+	border-top: #597fb9 solid 1px  ;
+ 
+}
+
+#menu li a {
+	font-family: MyCustomFont;
+	font-size:28px; 
+	color: #FFFFFF;
+	display:block;
+	outline:0;
+	text-decoration:none;
+	text-shadow: 1px 1px 1px #122454;
+}
+#menu li a img { border:0;}
+#menu li .drop {
+	padding-right:18px;
+	background:url("../images/drop.png") no-repeat right 22px;
+
+}
+#menu li:hover .drop {
+	background:url("../images/drop.png") no-repeat right 21px;
+	      
+}
+.dropdown{
+    margin:0px auto;
+	float:left;
+	position:absolute;
+	left:-999em; /* Hides the drop down */
+	text-align:left;
+	padding:10px 5px 10px 5px;
+	border-top:none;
+	background:#2c477a;
+	width: 390px;
+	font-size:18px;	
+}
+
+#menu li:hover .dropdown{
+	left:-1px;
+	top:auto;
+}
+.sub {
+	float:left;
+	width:175px;
+	background:url(../images/pin2.png) no-repeat 2px 10px;
+	padding:0 0 0 20px;
+
+}
+.sub:hover {
+	background:url(../images/pin2.png) no-repeat #385b9c 2px 10px;
+}
+#menu .menu_right {
+	float:right;
+	margin-right:0px;
+}
+
+#menu li:hover .align_right {
+	left:auto;
+	right:-1px;
+	top:auto;
+}
+
+

@@ -1,0 +1,27 @@
+<?php
+if (isset($_POST['login_email'], $_POST['login_pass'])) {
+          $email = $_POST['login_email'];
+          $pass = $_POST['login_pass'];
+          if ($email != '' && $pass != '') {
+                    include '../config.php';
+                    $sql = "select * from tb_users where email ='$email' and pass='$pass'";
+                    $result = mysql_query($sql);
+                    $row = mysql_num_rows($result);
+                    while ($rc = mysql_fetch_array($result)) {
+                              $id_user = $rc['id_user'];
+                              $name = $rc['name'];
+                    }
+
+                    if ($row == 1) {
+                              session_start();
+                              session_register("email");
+                              session_register("id_user");
+                              session_register("name");
+                              $_SESSION['name'] = $name;
+                              $_SESSION['email'] = $email;
+                              $_SESSION['id_user'] = $id_user;
+                              print"<meta http-equiv=refresh content=0;URL=../index.php>";
+                    }
+          }
+}
+?>

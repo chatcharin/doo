@@ -1,0 +1,19 @@
+<?
+session_start() ;
+session_destroy();
+?>
+<html>
+<head>
+<title>:: ผลการเข้าสู่ระบบ ::</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+<body>
+
+<?
+echo "<center>ออกจากระบบเรียบร้อย</center>";
+print "<meta http-equiv='refresh' content='1;url=../index.php'>";
+exit();
+?>
+
+</body>
+</html>

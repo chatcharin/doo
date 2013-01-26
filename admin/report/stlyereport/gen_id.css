@@ -1,0 +1,21 @@
+@charset "utf-8";
+#gen_id {
+	font-family: Tahoma;
+	font-size: 22px;
+	font-weight: 200;
+	color: #003;
+	text-decoration: none;
+	text-align: center;
+	width: 210px;
+	height: auto;
+	float: left;
+	position: absolute;
+	left: 90px;
+	top: 1px;
+	right: auto;
+	bottom: auto;
+	background-color: #FFF;
+	background-attachment: fixed;
+	background-repeat: repeat;
+	background-position: center center;
+}

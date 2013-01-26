@@ -1,0 +1,9 @@
+            $.ajax({
+                type:"POST",
+                url:"get_marker.php",
+                data:"id=" + <?= $id_gen ?>,
+                success:function(marker){
+                    $('#map_canvas').html("<img title='????????????????' style='border:5px solid #ccc;cursor:pointer;' src='http://maps.google.com/staticmap?center="+marker+"&amp;zoom=7&amp;size=550x100&amp;maptype=roadmap&amp;markers="+marker+"&amp;key=AIzaSyAUf3LAxep-Yce9tOPTWsjintjII3dyxIQ'/>");
+                    
+                }
+            });

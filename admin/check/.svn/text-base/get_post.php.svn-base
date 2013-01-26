@@ -1,0 +1,25 @@
+<?php
+
+session_start();
+$id = $_SESSION['id_user'];
+$topic = $_POST['topic'];
+$id_class = $_POST['id_class'];
+$id_type = $_POST['id_type'];
+$price = $_POST['price'];
+$id_unit = $_POST['id_unit'];
+$rai = $_POST['rai'];
+$ngan = $_POST['ngan'];
+$tarang = $_POST['tarang'];
+$date=date("d-m-Y");
+$p_status = $_POST['p_status'];
+
+
+include '../config.php';
+$sql = "insert into tb_general(id_user,topic,id_class,id_type,price,id_unit,rai,ngan,tarang,date,p_status) 
+                    values('$id','$topic','$id_class','$id_type','$price','$id_unit','$rai','$ngan','$tarang','$date','$p_status')";
+
+$query = mysql_db_query($db_name, $sql);
+if ($query) {
+          
+}
+?>

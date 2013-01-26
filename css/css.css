@@ -1,0 +1,254 @@
+/* CSS Document */
+input.text, select.text, textarea.text {background:#FFFFFF;border: 1px solid #CCCCCC;}
+#clear {clear:both; padding:0; margin:0;}
+body{ background:url(../images/bg_body_property.jpg) repeat-x #b0fdb6; font: 0.8em verdana,geneva,lucida,'lucida grande',arial,helvetica,sans-serif;margin: 0;padding: 0;color:#333333;}
+/* cufon ทำตัวหนังสือให้เป็นรูปภาพ*/
+h1{border-bottom:1px #999999 dotted; padding: 10px 0 0 10px; }
+h3 {border-bottom: 2px solid #B9DB78;padding: 10px 0 0 0px;font-size:32px; color:#669900;margin: 0 0 10px 0;}
+h3 span {background-color: #669900;color: #FFFFFF;padding: 0px 5px 0 5px ;margin: 0 10px 0 0;}
+#red { font-size:36px; color:#C40000;margin: 0;}
+#green{ font-size:36px; color:#669900;margin: 0;}
+#yellow{ font-size:36px; color:#df9e1f;margin: 0;}
+#pink{ font-size:36px; color:#f24ddd;margin: 0;}
+#blue{ font-size:36px; color:#0055FF;margin: 0;}
+
+h2 { font-size:26px;margin: 0 0 10px 0;border-bottom: 2px solid #669900; color:#669900;}
+h2 span {font-size:40px;background-color: #669900;color: #FFFFFF;padding: 0px 5px 0 5px ;margin: 0 2px 0 0; font-weight:bold;}
+#black{font-size:26px; color:#000;margin: 0;}
+#white_orange{font-size:32px; color:#ffffff;margin: 0;border-radius: 4px ;background:#FFAD5B;padding:5px; margin:0 0 10px 0;}
+#white_green{font-size:32px; color:#ffffff;margin: 0;border-radius: 4px;background:#82D55E;padding:5px; margin:0 0 10px 0;}
+#white_blue{font-size:32px; color:#ffffff;margin: 0;border-radius: 4px;background:#6699CC;padding:5px; margin:0 0 10px 0;}
+#gray{ font-size:36px; color:#999999;margin: 0; padding:0 0 0 40px; background:url(../images/User.png) center left no-repeat;border-bottom: 1px #999999 dotted;}
+h4 {background-color: #FFFEEB;border: 1px solid #FFEECC;color: #C41200;font-size: 32px;font-weight:700; margin:0; }
+
+.button {-moz-border-bottom-colors: none;-moz-border-image: none;-moz-border-left-colors: none; -moz-border-right-colors: none-moz-border-top-colors:none;background:#FFCC00;border-color: #81A340 #81A340 #708444;border-radius: 5px 5px 5px 5px;border-style: solid;border-width: 1px;color:#663300;cursor: pointer;display: inline-block;font: bold 15px arial,sans-serif;margin: 0;padding: 4px 10px;}
+button:hover, .button:hover {color:#FF6600;background:#FFCC33;}
+
+#all{width:996px; min-height:650px; margin:0 auto; padding:0;}
+#header{ background:url(../images/bg_header_property.png) no-repeat top; width:100%; min-height:110px; margin:0; padding:0;}
+#logo_home{width:205px; height:75px; float: left; padding:8px 0 0 20px;}
+#logo {background-image:url(../images/logo_property.png);float: left;height: 75px;text-indent: -1000px;width: 205px;}
+/* เมนู*/
+/* เมนูภาษาไทย อังกฤษ*/
+#menu_language{ min-width:100px; height:25px; float:right;}
+.language {padding:5px 20px 0 0;margin:0;list-style:none;height:20px;}
+.language li {float:left;}
+.language li a {display:block;float:left;height:20px;line-height:20px;color:#FFFFFF;text-decoration:none;font-family:arial, verdana, sans-serif;text-align:center;padding:0 0 0 10px;cursor:pointer;font-size:11px;font-weight:700;}
+.language li a:hover{ text-decoration:underline;}
+.language li a em {display:block;float:left;width:25px;height:20px;} 
+.language li a em.th {background-image:url(../images/th.png);background-repeat: no-repeat;background-position: center center;}
+.language li a em.en {background-image:url(../images/en.png);background-repeat: no-repeat;background-position: center center;}
+/* เมนูหลัก*/
+#menu_nav1{ width:740px; height:36px; float:left;list-style:none;margin:20px 10px 9px 10px;padding:0px 0px 0px 10px;}
+.menu1 {padding:2px 0 0 7px; margin:0; list-style:none; height:35px;}
+.menu1 li {float:left; background:url(../images/li_menu1.jpg) no-repeat center right;}
+.menu1 li a {display:block; float:left; height:35px; line-height:35px; color:#ffffff; text-decoration:none; font-size:14px; text-align:center; padding:0 15px 0 15px; cursor:pointer;}
+.menu1 li a:hover {color:#CCFF33;}
+/* เมนูย่อย*/
+#menu_nav2{ width:976px; height:29px; float:left;margin:0 0 0px 10px;}
+.menu2 {padding:0 0 0 10px; margin:0; list-style:none; height:29px; background: url(../images/bg_menu2_1.gif);border-radius: 0px 0px 7px 7px;border: medium none; border:#004f0a 1px solid;
+border-top:none;}
+.menu2 li {float:left;}
+.menu2 li a {display:block; float:left; height:30px; line-height:29px; color:#003300;  text-decoration:none;  text-align:center; padding:0 0 0 3px; cursor:pointer; font-size:12px;}
+.menu2 li a b {float:left; display:block;padding:0 12px 0 6px; font-weight:normal;}
+.menu2 li a:hover {color:#fff; background: url(../images/bg_menu2_2.gif);}
+.menu2 li a:hover b {background:url(../images/bg_menu2_2.gif) no-repeat right top ;font-weight:normal;}
+.menu2 li a em {display:block; float:left; width:16px; height:29px;}
+.menu2 li a em.home {background:url(../images/home_icon.gif) no-repeat center center;}
+
+
+#wrap{ width:100%;min-height:300px; margin:0; padding:0;}
+#main_all{ min-height:20px;float:left;margin:0 0 30px 0;}
+#main{width:685px; min-height:20px;float:left;}
+#right{width:300px;min-height:200px;float:left;margin:0 0 0 10px;}
+#right li {font-size:14px; padding:0 0 0 30px; list-style:none;margin:0 0 0 25px;height:23px;}
+#right li a{font-size:14px; color:#669900;}
+#right li a:hover{font-size:14px; color:#006633;}
+#right li.kreatnaken_bank{  background:url(../images/kreatnaken_bank.gif) no-repeat left top; }
+#right li.kasikorn_bank{  background:url(../images/kasikorn_bank.gif) no-repeat left top;  }
+#right li.krungsri_bank{  background:url(../images/krungsri_bank.gif) no-repeat left top;  }
+#right li.krungthai_bank{  background:url(../images/krungthai_bank.gif) no-repeat left top; }
+#right li.krungthap_bank{  background:url(../images/krungthap_bank.gif) no-repeat left top;  }
+#right li.nakronloung_bank{  background:url(../images/nakronloung_bank.gif) no-repeat left top;  }
+#right li.tanachat_bank{  background:url(../images/tanachat_bank.gif) no-repeat left top; }
+#right li.thaipanit_bank{  background:url(../images/thaipanit_bank.gif) no-repeat left top;  }
+#right li.tisgo_bank{  background:url(../images/tisgo_bank.gif) no-repeat left top; }
+#right li.tos_bank{ background:url(../images/tos_bank.gif) no-repeat left top;  }
+#right li.uob_bank{  background:url(../images/uob_bank.gif) no-repeat left top;  }
+#right li.tmb_bank{  background:url(../images/tmb_bank.gif) no-repeat left top;  }
+#right li.cimb_bank{ background:url(../images/cimb_bank.gif) no-repeat left top;  }
+#right li.default{ background:url(../images/li.gif) no-repeat left top;  }
+
+#top{width:100%; min-height:190px; margin:0; padding:0;}
+
+/* กล่องค้นหา*/
+#head_search{width:210px;padding:15px 0 0 55px; font-size:17px; color:#FFFFFF; font-weight:600; margin:0 0 10px 0;}
+#col_search{width:155px; min-height:100px; margin:0 0 0 10px; float:left;}
+#search-box{float:left; width:500px; height:190px;  background:url(../images/bg_search_property.png) no-repeat top  left; margin:0 0 10px 0 ; color:#003300;}
+#search-box select { background:#FFFFFF ; border: 1px solid #CCCCCC;float:left; margin:0 10px 5px 0; padding: 3px;width: 150px;}
+#search-box input.text {border: 1px solid #CCCCCC;float:left; margin:0 10px 4px 0; padding: 3px;width: 140px;height: 19px;}
+#search-box input.search {cursor: pointer;height: 28px;line-height: 0;width: 70px; }
+#top_banner{  float:left; width:480px; padding:10px 0 0 10px;}
+/* หน้าแรกบ้านในโครงการ*/
+#project{float: left;cursor: pointer;height: 180px;margin: 10px 15px 10px 12px;}
+#project div{ position:relative;}
+#project img {background: none repeat scroll 0 0 #FFFFFF;border: 1px solid #CCCCCC;display: block;margin: 0 auto 10px;padding: 5px;width: 180px;}
+span.price_tag {background: url(../images/gray_bg.png) repeat scroll 0 0 transparent;color: #FFFFFF;display: block; margin-left: 6px;padding: 3px;position: absolute;top: 120px;width: 174px;}
+a.box_link {color: #669900;display: block;margin: 5px auto 0;text-decoration: none;width: 172px;}
+#link_project_All{ border-top:1px dotted #AAAAAA; margin:10px 0 0 0; padding:10px; text-align:right;}
+a.view_project{ background:url(../images/view_green.png) no-repeat center right; padding:10px 40px 10px 0; text-decoration:underline; color:#669900; }
+/* หน้าแรกของบทความข่าว*/
+#news {float: left;width: 325px;margin:10px 0 0 0; padding:5px 0;}
+#news_img {margin:0; float:left; width:140px;  text-align: center;}
+#news_img img {background-color: #FFFFFF;border: 1px solid #DDDDDD;display: block;margin: 0 auto;overflow: hidden;padding: 3px;}
+a.header_news {border: medium none;color:#CC3300;font-size: 13px;font-weight: bold;line-height: normal;text-decoration: none;}
+a:hover.header_news{ text-decoration:underline;}
+#link_news_All{ border-top:1px dotted #AAAAAA; margin:10px 0 0 0; padding:10px; text-align:right;}
+a.view_news{ background:url(../images/view_red.png) no-repeat center right; padding:10px 40px 10px 0; text-decoration:underline; color:#CC3300; }
+
+/* content */
+#content_all{ width:970px; min-height:350px; box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);border-radius: 4px 4px 4px 4px;border: medium none;background:#ffffff;border-color: #E5E5E5 #DBDBDB #D2D2D2;border-style: solid;border-width: 1px; padding:10px; margin:0 0 10px 0;}
+#content1{ width:665px; min-height:350px; box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);border-radius: 4px 4px 4px 4px;border: medium none;background:#ffffff;border-color: #E5E5E5 #DBDBDB #D2D2D2;border-style: solid;border-width: 1px; padding:10px; margin:0 0 10px 0;}
+#content2{ width:290px;min-height:20px; box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);border-radius: 4px 4px 4px 4px;border: medium none;background:#ffffff;border-color: #E5E5E5 #DBDBDB #D2D2D2;border-style: solid;border-width: 1px;  padding:5px; margin:0 0 10px 0;}
+#content2 p{ margin:0;}
+
+/* หน้าแรกประกาศทั้งหมด*/
+#all_house_post{ padding: 10px 0 10px 10px;font-size: 18px;font-weight: bold; text-align:center;}
+#all_house_post span{ color:#0055FF;}
+#all_house{border-bottom: #CCCCCC dotted 1px;  margin:10px 0 0 0; padding:5px;}
+#all_house_img{ margin:0; float:left; width:130px;  text-align: center;}
+#all_house_img img {background-color: #FFFFFF;border: 1px solid #DDDDDD;display: block;margin: 0 auto;overflow: hidden;padding: 2px;}
+#all_house_img span {color: #0066CC;font-size: 11px;line-height: 1em;}
+#all_house_detail{ float:left; padding:5px;}
+a.headerlink {border: medium none;color:#0066CC;font-size: 15px;font-weight: bold;line-height: normal;text-decoration: none;}
+a:hover.headerlink{ text-decoration:underline;}
+div.g {border-right: 1px dotted #AAAAAA;float: left;height: 60px;width: 240px;}
+div.g2 {float: left;height: 60px;width: 250px; padding:0 0 0 10px;}
+div.g2 span{color: #C41200;font-size: 16px;vertical-align: top; font-weight:bold;}
+a.view{ background:url(../images/view.png) no-repeat center right; padding:10px 40px 10px 0; text-decoration:underline; color:#0066CC; }
+  
+/* หน้าแสดงประกาศเฉพาะ*/
+#main td.label {font-weight: bold;width: 165px; color:#333333; font-size:16px;padding: 10px 0;vertical-align: top;}
+#main td.value {border-bottom: 1px dotted #999999;width: 545px;padding: 10px 0;vertical-align: top;}
+#main td.price {color: #C41200;font-size: 20px;padding: 10px 0;vertical-align: top;}
+#map{ border:#CCCCCC 3px solid; margin:5px 0 0 0;}
+#detail_more{ padding:0 0 0 20px;}
+#print{ background:url(../images/print.png) no-repeat top left; width:140px; height:28px;text-indent:-9000px; float:left;outline:0;}
+#print:hover{margin:0 0 0 3px;}
+
+/* ส่วนท้าย*/
+#footer_all{ width:100%;min-height:100px; background:url(../images/bg_footer_property.jpg) repeat-x top #FFFFFF;padding:0; margin:0 auto; }
+#footer{ font-size:14px; background:url(../images/bg_footer_menu_property.jpg) repeat-x top; margin:0 auto ; width:996px; min-height:100px; padding:0; }
+.menu_footer {padding:0 0 0 5px; margin:0; list-style:none; height:29px;}
+.menu_footer li {float:left;}
+.menu_footer li a {display:block; float:left; height:29px; line-height:29px; color:#003300;text-decoration:none;  text-align:center; padding:0 12px 0 11px; cursor:pointer; font-size:12px;}
+.menu_footer li a:hover {color:#fff; background:#21a900;}
+.menu_footer li a em {display:block; float:left; width:16px; height:29px;}
+.menu_footer li a em.home {background:url(../images/home_icon.gif) no-repeat center center;}
+#footer_link{ padding:10px; text-align:center; font-size:11px;}
+#footer_link a{ color:#336633;}
+#footer_link a:hover{ color:#369;}
+
+/*หน้า ติดต่อ*/
+#contact{padding:10px; margin:0px;}
+#contact_form{ width:500px; padding:20px; border:3px solid #CCCCCC; float:left; }
+#contact_form input.text{padding: 4px;width: 250px;font-size: 14px; color:#333333;}
+#contact_form input.sent{pcursor: pointer;height: 30px;line-height: 0;width: 80px; }
+#contact_detail{width:350px; padding:10px; margin:0 30px 0 0 ; float:left; font-size: 14px;}
+#contact_detail p.notice {background-color: #FFFEB0;border: 1px dashed #CCCCCC;font-size: 14px;margin: 10px 0 10px 0px;padding: 10px;}
+
+/*หน้า comment*/
+#comment{padding:5px; margin:0px;}
+#contact_form{ width:500px; padding:20px;}
+#comment_form input.text{width:200px; padding: 4px; font-size: 14px; }
+#comment_form select { background:#FFFFFF ; border: 1px solid #CCCCCC; margin:0 10px 0px 0; padding: 3px;width: 210px;}
+#comment_form input.sent{pcursor: pointer;height: 30px;line-height: 0;width: 80px; }
+
+
+/*css แบ่งหน้า*/
+.browse_page{
+	
+	margin-left:12px;
+	height:30px;
+	margin-top:5px;
+	display:block;
+	float:right;
+}
+.browse_page a,.browse_page a:hover{
+	display:block;
+	height:18px;
+	width:18px;
+	font-size:10px;
+	float:left;
+	margin:5px 2px 0 0;
+	border:1px solid #CCCCCC;
+	background-color:#F4F4F4;
+	color:#333333;
+	text-align:center;
+	line-height:18px;
+	font-weight:bold;
+	text-decoration:none;
+}
+.browse_page a:hover{
+	border:1px solid #0A85CB;
+	background-color:#0A85CB;
+	color:#FFFFFF;
+}
+.browse_page a.selectPage{
+	display:block;
+	height:18px;
+	width:18px;
+	font-size:10px;
+	float:left;
+	margin-right:2px;
+	border:1px solid #0A85CB;
+	background-color:#0A85CB;
+	color:#FFFFFF;
+	text-align:center;
+	line-height:18px;
+	font-weight:bold;
+}
+.browse_page a.SpaceC{
+	display:block;
+	height:18px;
+	width:18px;
+	font-size:10px;
+	float:left;
+	margin-right:2px;
+	border:0px dotted #0A85CB;
+	font-size:11px;
+	background-color:#FFFFFF;
+	color:#333333;
+	text-align:center;
+	line-height:18px;
+	font-weight:bold;
+}
+.browse_page a.naviPN{
+	width:50px;
+	font-size:12px;
+	display:block;
+	height:18px;
+	float:left;
+	border:1px solid #0A85CB;
+	background-color:#0A85CB;
+	color:#FFFFFF;
+	text-align:center;
+	line-height:18px;
+	font-weight:bold;	
+}
+.browse_page a.naviPN:hover{
+	width:50px;
+	font-size:12px;
+	display:block;
+	height:18px;
+	float:left;
+	border:1px solid #0A85CB;
+	background-color:#0A85CB;
+	color:#FFFFFF;
+	text-align:center;
+	line-height:18px;
+	font-weight:bold;	
+}
+
+
+

@@ -1,0 +1,223 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link type="text/css" rel="stylesheet" href="css/style.css">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.js" type="text/javascript"></script>
+<script type="text/javascript">
+
+$(document).ready(function(){
+    $(".search").hide();
+	$(".search_hide").show();
+	$(".post").hide();
+	$(".post_hide").show();
+
+	$('.search_hide').click(function(){
+	$(".search").slideToggle();
+	$(".post").hide();
+	});
+	$('.post_hide').click(function(){
+	$(".post").slideToggle();
+	$(".search").hide();
+	});
+});
+</script>
+<title>Untitled Document</title>
+</head>
+<body>
+<div id="top">
+	<div  id="header"> 
+			<div id="home">
+					<a id="logo" href="/">คอนโด บ้านมือสอง ขายบ้าน</a>			
+			</div>
+			<div id="top_menu">		
+				<ul id="menu">
+					<li><a href="#" ><img src="images/home.png" />หน้าแรก</a></li>
+					<li><a href="#" class="drop" ><img src="images/pin.png" />เช่า</a>
+							<div class="dropdown">
+							  <a href="#" class="sub"> บ้านเดี่ยว</a>
+							 <a href="#" class="sub">ทาวน์เฮ้าส์/ทาวน์โฮม</a>
+							 <a href="#" class="sub"> คอนโดมีเนียม</a>
+							 <a href="#" class="sub"> อาคารพาณิชย์</a>
+							 <a href="#" class="sub"> อพาร์ทเมนท์	</a>
+							 <a href="#" class="sub">ที่ดิน</a>
+							 <a href="#" class="sub"> อพาร์ทเมนท์	</a>
+							 <a href="#" class="sub"> โกดัง/โรงงาน์</a>
+							 <a href="#" class="sub"> สำนักงาน	</a>
+							 <a href="#" class="sub"> กิจการ</a>
+							 <a href="#" class="sub"> พื้นที่ขายของ	</a>
+							 <a href="#" class="sub"> โรงแรม/รีสอร์ท	</a>
+							 </div>
+					</li>
+					<li><a href="#" class="drop" ><img src="images/pin.png" />ขาย</a>
+							<div class="dropdown">
+							  <a href="#" class="sub"> บ้านเดี่ยว</a>
+							 <a href="#" class="sub">ทาวน์เฮ้าส์/ทาวน์โฮม</a>
+							 <a href="#" class="sub"> คอนโดมีเนียม</a>
+							 <a href="#" class="sub"> อาคารพาณิชย์</a>
+							 <a href="#" class="sub"> อพาร์ทเมนท์	</a>
+							 <a href="#" class="sub">ที่ดิน</a>
+							 <a href="#" class="sub"> อพาร์ทเมนท์	</a>
+							 <a href="#" class="sub"> โกดัง/โรงงาน์</a>
+							 <a href="#" class="sub"> สำนักงาน	</a>
+							 <a href="#" class="sub"> กิจการ</a>
+							 <a href="#" class="sub"> พื้นที่ขายของ	</a>
+							 <a href="#" class="sub"> โรงแรม/รีสอร์ท	</a>
+							 </div>
+					</li>
+					<li><a href="#" class="search_hide" ><img src="images/search.png" />ค้นหา</a></li>    
+					<li class="menu_right"><a href="#"  class="post_hide"><img src="images/post.png" />ลงประกาศฟรี</a></li>
+				
+				</ul>
+			
+			
+			</div>
+     </div>
+</div>
+<div class="search">
+	<div id="content_search">
+		<table width="100%" border="0" cellspacing="0" cellpadding="0">
+		  <tr>
+		   <td align="right">ประเภทอสังหาฯ : </td>
+		   <td align="left"><select  ><option>ทาวน์เฮ้าส์/ทาวน์โฮม</option></select></td>
+			<td align="right">ประเภทประกาศ : </td>
+			<td align="left"> <select ><option>เช่า</option></select></td>
+			</tr>
+		  <tr>
+		  <td align="right">จังหวัด : </td>
+			<td align="left"><select >
+			  <option>กรุงเทพมหานคร</option>
+			  </select>			</td>
+			<td align="right">อำเภอ :</td>
+			<td align="left"><select > <option>สว่างแดนดิน</option></select></td>
+		  </tr>
+		  <tr>
+			<td align="right">ช่วงราคาต่ำสุด : </td>
+			<td align="left"><input  type="text" /></td>
+			<td align="right">ถึงราคาสูงสุด : </td>
+			<td align="left"><input  type="text" /></td>
+			</tr>
+		  <tr>
+			<td align="right">&nbsp;</td>
+			<td align="left">&nbsp;</td>
+			<td align="right">&nbsp;</td>
+			<td align="left">
+		     
+		        <input type="submit"  value="ค้นหา" />
+	         <div align="right"><a href="#" class="search_hide"><img src="images/topIcon.png" width="19" height="19"  border="0"/></a></div></td>
+			</tr>
+		</table>
+</div>    
+</div>
+<div class="post">
+  <div id="content_post">
+  		<div id="content_login">
+			  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+			  <tr>
+				<td align="right">Email :</td>
+				<td align="left"><input name="text"  type="text" /></td>
+			  </tr>
+			  <tr>
+				<td align="right">Password :</td>
+				<td align="left"><input name="text2"  type="text" /><br /><input name="" type="checkbox" value="" /><span style="font-size:12px;">Remember Me</span></td>
+			  </tr>
+			  <tr>
+				<td>&nbsp;</td>
+				<td><input name="submit" type="submit"  value="         Login          " /></td>
+			  </tr>
+			  <tr>
+				<td>&nbsp;</td>
+				<td><span style="font-size:16px;"><a href="#">Forget your password </a></span></td>
+			  </tr>
+			</table>
+		</div>  
+		<div id="content_regis">
+			หากท่านยังไม่มีบัญชี สำหรับเข้าใช้งานเพื่อลงประกาศฟรี คลิกที่ ปุ่มสมัครใช้งาน<br /><br />
+			<input name="submit" type="submit"  value="    สมัครใช้งาน    " />
+			<div align="right"><a href="#" class="post_hide"><img src="images/topIcon.png" width="19" height="19"  border="0"/></a></div>
+		</div> 
+		<div class="clear"></div>   
+</div>
+</div>
+<div id="wrap">
+	<div  id="left"><img src="images/xx.png" width="249" height="534" /><img src="images/xx.png" width="249" height="534" /></div>
+	<div  id="view">
+			<span class="type_view">ขาย</span>
+			<span class="title_view">บ้านสองชั้นพร้อมเฟอร์ ม.กุลพันธ์วิลล์ 7 บ้านสวย หรูหรา เหมาะสมกับคนมีครอบครัว</span>
+			<hr class="clear" />
+			<h5>ข้อมูลทั่วไป</h5>
+			<span class="label_view">ประเภท :</span><span class="text_view">ขาย บ้านเดี่ยว</span><br />		
+   			<span class="label_view">ที่ตั้ง     :</span><span class="text_view">3/7 สุขาภิบาล 5, 10220 สายไหม, กรุงเทพ</span><br />	  	 
+		 	<span class="label_view">ขนาดพื้นที่ :</span><span class="text_view">0 ไร่ 0 งาน 125  ตารางวา</span>	<br />
+			<span class="label_view">ราคา :</span><span class="price_view">13,000,000.00 บาท</span>	<br />
+			<p align="center"><img src="images/map.jpg" /></p>
+		  
+		  <hr class="clear" />
+			<h5>รายละเอียดเพิ่มเติม</h5>  
+			<p class="detail_view">บ้านหรู บนพึ้นที่ 120 ตารางวา พื้นที่ใช้สอย 280 ตารางเมตร แปลงมุม ติดถนนเมน
+
+ตัวบ้านประกอบไปด้วย 4 ห้องนอน 1 เรือนรับรอง 1 ห้องแม่บ้าน 5 ห้องน้ำ แอร์ 7 ตัว มีห้องอเนกประสงค์ชั้นล่าง 
+จะทำเป็นห้องโฮมเธียเตอร์ หรือเป็นห้องนอนอีกห้องสำหรับผู้สุงอายุที่ไม่ต้องการขึ้นบันไดก็ได้ มีบ้านรับรองแยกส่วน
+อีกหนึ่งหลังมีห้องน้ำในตัว
+</p>
+		  <hr class="clear" />
+			<h5>ข้อมูลเจ้าของประกาศ</h5>     	       	
+			<span class="label_view">ผู้ลงประกาศ :</span><span class="text_view">กนกวรรณ  ปิงเขียว</span><br />		
+   			<span class="label_view"> เบอร์โทร :</span><span class="text_view">3/7 สุขาภิบาล 5, 10220 สายไหม, กรุงเทพ</span><br />	  	 
+		   <span class="label_view"> อีเมล :</span><span class="text_view">4xsale@gmail.com</span>	<br /><br />
+		   <hr class="clear" />
+		   			
+			<p align="center"><img src="images/photo.jpg" /></p>
+	</div>
+</div>
+<hr class="clear" />
+<div id="lower">
+	<div  id="footer">
+	  <div class="col1">
+			<h3>ขาย</h3>
+						  <a href="#" class="f_ink" > บ้านเดี่ยว</a>
+						   <a href="#" class="f_ink" >ทาวน์เฮ้าส์/ทาวน์โฮม</a>
+						   <a href="#" class="f_ink" > คอนโดมีเนียม</a>
+						   <a href="#" class="f_ink"> อาคารพาณิชย์</a>
+						   <a href="#" class="f_ink" > อพาร์ทเมนท์	</a>
+						   <a href="#" class="f_ink">ที่ดิน</a>
+						   <a href="#"  class="f_ink"> อพาร์ทเมนท์	</a>
+						   <a href="#"  class="f_ink"> โกดัง/โรงงาน์</a>
+						   <a href="#" class="f_ink" > สำนักงาน	</a>
+						   <a href="#"  class="f_ink"> กิจการ</a>
+						   <a href="#"  class="f_ink"> พื้นที่ขายของ	</a>
+						   <a href="#" class="f_ink"> โรงแรม/รีสอร์ท	</a>	
+		</div>
+		<div class="col2">
+						<h3>เช่า</h3>
+						  <a href="#" class="f_ink" > บ้านเดี่ยว</a>
+						   <a href="#" class="f_ink" >ทาวน์เฮ้าส์/ทาวน์โฮม</a>
+						   <a href="#" class="f_ink" > คอนโดมีเนียม</a>
+						   <a href="#" class="f_ink"> อาคารพาณิชย์</a>
+						   <a href="#" class="f_ink" > อพาร์ทเมนท์	</a>
+						   <a href="#" class="f_ink">ที่ดิน</a>
+						   <a href="#"  class="f_ink"> อพาร์ทเมนท์	</a>
+						   <a href="#"  class="f_ink"> โกดัง/โรงงาน์</a>
+						   <a href="#" class="f_ink" > สำนักงาน	</a>
+						   <a href="#"  class="f_ink"> กิจการ</a>
+						   <a href="#"  class="f_ink"> พื้นที่ขายของ	</a>
+						   <a href="#" class="f_ink"> โรงแรม/รีสอร์ท	</a>	
+		</div>
+		<div class="col3">
+				<h3>Link</h3>
+						 <a href="#" class="f_ink">ติดต่อเรา</a> 
+		 				 <a href="#" class="f_ink">ลงประกาศฟรี</a>
+						<a href="#" class="f_ink">สมัครสมาชิก</a> 
+		  				<a href="#" class="f_ink">เงื่อนไขการให้บริการ</a>
+		 
+		</div>
+		<div class="col4">
+		  สนใจติดต่อสอบถาม-ลงโฆษณา<br />
+		<img src="images/4xtreme.png" align="left" style="margin:5px;" /><br />
+		<span style="font-size:12px;">บริษัทโฟร์เอ็กซ์ตรีม จำกัด 351/16 หมู่ที่5 ต.ดอนแก้ว อ.แม่ริม จ.เชียงใหม่ 50180</span>
+		<p><b>Tel: +66-53-122-764 <br />Mobile: +66-89-432-4600	</b></p>	
+	  </div>
+  </div>
+</div>
+</body>
+</html>

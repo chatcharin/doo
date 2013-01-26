@@ -1,0 +1,18 @@
+@charset "utf-8";
+#code {
+	font-family: Tahoma;
+	font-size: 24px;
+	font-weight: bold;
+	text-decoration: none;
+	text-align: left;
+	width: 300px;
+	position: absolute;
+	height: auto;
+	left: 20px;
+	top: 192px;
+	right: auto;
+	bottom: auto;
+	float: left;
+	clear: none;
+	color: #FFF;
+}

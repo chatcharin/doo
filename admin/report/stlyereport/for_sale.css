@@ -1,0 +1,17 @@
+@charset "utf-8";
+#for_sale {
+	font-family: Tahoma;
+	font-size: 32px;
+	font-weight: bold;
+	text-decoration: none;
+	color: #F00;
+	background-color: #FFF;
+	background-position: center center;
+	width: 170px;
+	clear: none;
+	float: none;
+	height: auto;
+	position: absolute;
+	left: 640px;
+	top: 20px;
+}

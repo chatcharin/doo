@@ -1,0 +1,138 @@
+#menu {
+	list-style:none;
+	width:700px;
+	margin:0px auto 0px auto;
+	height:39px;
+	padding:0px 0px 0px 10px;
+
+	/* Background color and gradients */
+	background:url(../img/bg_menu.jpg) repeat-x top left;;
+	/* Rounded corners */
+	
+	-moz-border-radius: 7px ;
+	-webkit-border-radius: 7px;
+	border-radius: 7px;
+}
+
+#menu ul, li {
+	font-size:14px; 
+	font-family:Arial, Helvetica, sans-serif;
+	line-height:39px;
+	text-align:left;
+	font-weight:700;
+}
+
+#menu li {
+	float:left;
+	display:block;
+	text-align:center;
+	position:relative;
+	padding: 0px 15px 0px 15px;
+	margin-right:18px;
+	line-height:39px;
+	border:none;
+}
+
+#menu li:hover {
+	background:url(../img/menu_hover.png) repeat-x top left;;
+}
+
+#menu li a {
+	font-family:Arial, Helvetica, sans-serif;
+	color: #EEEEEE;
+	display:block;
+	outline:0;
+	text-decoration:none;
+}
+#home{ background:url(../img/home.png) no-repeat left 7px ; width:24px; height:30px; float:left; padding:0 5px 0 0;}
+#menu li:hover a {
+	color:#1e4d04;
+}
+#menu li .drop {
+	padding-right:21px;
+	background:url("../img/drop.png") no-repeat right 18px;
+}
+#menu li:hover .drop {
+	background:url("../img/drop.png") no-repeat right 17px;
+}
+
+ 
+.dropdown_3columns
+{
+	margin:0px auto;
+	float:left;
+	position:absolute;
+	left:-999em; /* Hides the drop down */
+	text-align:left;
+	padding:10px 5px 10px 5px;
+	border-top:none;
+	
+	/* Gradient background */
+	background:url(../img/bg_tranparent_black.png) repeat;
+
+	/* Rounded Corners */
+	-moz-border-radius: 0px 5px 5px 5px;
+	-webkit-border-radius: 0px 5px 5px 5px;
+	border-radius: 0px 5px 5px 5px;
+}
+.dropdown_3columns {width: 450px;}
+ 
+#menu li:hover .dropdown_3columns {
+	left:-1px;
+	top:auto;
+}
+
+.col_1{
+	display:inline;
+	float: left;
+	position: relative;
+}
+.col_1 {width:150px;}
+
+#menu li:hover div a {
+	font-size:12px;
+	color:#FFFFFF;
+}
+#menu li:hover div a:hover {
+	color:#1e4d04;
+}
+
+#menu li ul {
+	list-style:none;
+	padding:0;
+	margin:0 ;
+}
+#menu li ul li {
+	font-size:12px;
+	line-height:24px;
+	position:relative;
+	padding:0;
+	margin:0;
+	float:none;
+	text-align:left;
+	width:140px;
+}
+#menu li ul li:hover {
+	background:none;
+	border:none;
+	padding:0;
+	margin:0;
+}
+
+#menu li .greybox li {
+	background:url(../img/bg_tranparent.png) repeat;
+	margin:0px 0px 4px 0px;
+	padding:4px 6px 4px 6px;
+	width:135px;
+
+	/* Rounded Corners */
+	-moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -khtml-border-radius: 5px;
+    border-radius: 5px;
+}
+#menu li .greybox li:hover {
+	background:url(../img/bg_tranparent1.png) repeat;
+	padding:4px 6px 4px 6px;
+	margin:0px 0px 4px 0px;
+}

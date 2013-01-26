@@ -1,0 +1,35 @@
+@charset "utf-8";
+#map {
+	font-family: Tahoma;
+	font-size: 18px;
+	font-weight: bold;
+	text-decoration: none;
+	background-color: #D6D6D6;
+	text-align: center;
+	width: 200px;
+	float: left;
+	height: auto;
+	position: absolute;
+	top: 340px;
+	left: 500px;
+	right: auto;
+	bottom: auto;
+}
+
+#map1 {
+	font-family: Tahoma;
+	font-size: 18px;
+	font-weight: bold;
+	text-decoration: none;
+	text-align: center;
+	float: left;
+	height: auto;
+	position: absolute;
+	top: 364px;
+	right: auto;
+	bottom: auto;
+	width: 410px;
+	left: 392px;
+	height: 309px;
+	border: medium none #000;
+}

@@ -1,0 +1,80 @@
+<?	
+$id_class=$_POST[id_class];
+$id_type=$_POST[id_type];
+
+include "../config.php";
+
+$date_post=date("d-m-Y");
+
+$insertSQL="INSERT INTO tb_general
+values('','$user_ID','$topic','$data_class','$data_type','$postPrice','$unit','$rai','$ngan','$tarang','$date_post','$usable') "; 
+$Result1 = mysql_query($insertSQL) or die(mysql_error());
+
+function acceptImage(){
+
+for($i=0;$i<count($_FILES["filUpload"]["name"]);$i++)
+	{
+		if($_FILES["filUpload"]["name"][$i] != "")
+		{
+			if(copy($_FILES["filUpload"]["tmp_name"][$i],"../postphoto/".$_FILES["filUpload"]["name"][$i]))
+			{
+			
+		//*** Insert Record ***//
+		include "../config.php";
+		mysql_select_db($database);
+		$query="select * from tb_general order by id_gen desc";
+		$id_gen = mysql_query($query) or die(mysql_error());
+		$row_rs = mysql_fetch_assoc($id_gen);
+		$id_gen=$row_rs['id_gen'];
+		
+				$strSQL = "INSERT INTO tb_image";
+				$strSQL .="(id_gen,name_img) VALUES ('$id_gen','".$_FILES["filUpload"]["name"][$i]."')";
+				$objQuery = mysql_query($strSQL);
+				
+			}
+		}
+	}
+}
+acceptImage();
+
+if($Result1<>0)
+	{
+        mysql_select_db($database_conn);
+		$query="select * from tb_general order by id_gen desc";
+		$id_gen = mysql_query($query) or die(mysql_error());
+		$row_rs = mysql_fetch_assoc($id_gen);
+		$id_gen=$row_rs['id_gen'];
+		}
+  		$insertSQL = "INSERT INTO tb_detail (id_gen, detail) VALUES ('$id_gen','$detailArea')";
+  		$Result1 = mysql_query($insertSQL) or die(mysql_error());
+
+if($Result1<>0)
+	{
+        mysql_select_db($database_conn);
+		$query="select * from tb_general order by id_gen desc";
+		$id_gen = mysql_query($query) or die(mysql_error());
+		$row_rs = mysql_fetch_assoc($id_gen);
+		$id_gen=$row_rs['id_gen'];
+		}
+  		$insertSQL = "INSERT INTO tb_contact (id_gen, name, email, tel) VALUES ('$id_gen','$postName','$postEmail','$postTel')";
+  		$Result1 = mysql_query($insertSQL) or die(mysql_error());
+
+if($Result1<>0)
+	    {
+		include "../config.php";
+		mysql_select_db($database);
+		$query="select * from tb_general order by id_gen desc";
+		$id_gen = mysql_query($query) or die(mysql_error());
+		$row_rs = mysql_fetch_assoc($id_gen);
+		$id_gen=$row_rs['id_gen'];
+		}
+  		$insertSQL = "INSERT INTO tb_location (id_gen, address, road, soy,province, amphur, tambon, detail, lat,lng) VALUES  		('$id_gen','$postAddress','$postRoad','$postSoy','$province','$amphur','$tambon','$locationData','$marker_lat','$marker_lng')";
+  		$Result1 = mysql_query($insertSQL) or die(mysql_error());
+	
+		
+if($Result1<>0)
+	{
+	echo "<meta http-equiv='refresh' content='0;URL=../index.php'>";
+	}
+mysql_close();
+?>

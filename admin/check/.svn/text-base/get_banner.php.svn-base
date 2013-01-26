@@ -1,0 +1,25 @@
+<? session_start(); ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+          <head>
+                    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+                    <title>banner</title>
+          </head>
+          <body>
+                    <?php
+                    if (isset($_POST['con_name'], $_POST['con_email'], $_POST['con_tel'], $_POST['con_subject'],$_POST['con_area'])) {
+                              $name = $_POST['con_name'];
+                              $email = $_POST['con_email'];
+                              $tel = $_POST['con_tel'];
+                              $subject = $_POST['con_subject'];
+                              $detail = $_POST['con_area'];
+                              include '../config.php';
+                              $sql = "insert into tb_advt(name,email,tel,subject,detail) values('$name','$email','$tel','$subject','$detail')";
+                              $result = mysql_query($sql);
+                              if ($result)
+                                        echo "ทำการแจ้งปัญหาเสร็จเรียบร้อยแล้ว !!!";
+                              print"<meta http-equiv=refresh content=2;URL=../index.php>";
+                    }
+                    ?>
+          </body>
+</html>
