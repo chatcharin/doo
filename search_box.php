@@ -10,42 +10,61 @@
             });
 	 }
 </script>
-<div id="search-box">
-					<div id="head_search">ค้นหาประกาศ - Search</div>
-						<form method="" id="search_form" action="post_search.php">
-						<div id="col_search">
-							<b>ประเภทอสังหาฯ :</b> <br />
-								<select name="type_id">
-									<option value="">ทุกประเภท</option>
-									<?php  require_once 'class.php'; ?>
-							    </select>
-							<br /><br />
-							<b>ประเภทอสังหาฯ : </b><br />
-								<select name="class_id">
-									<option value="">ทุกประกาศ</option>
-									<?php  require_once 'c_type.php'; ?>
-								</select>	
-						</div>
-						<div id="col_search">
-							<b>จังหวัด : </b><br />
-								<select onchange="searchamp(this.value);"  name="province" >
-									<option value="">ทุกจังหวัด</option>
-									<?php  require_once 'prov.php'; ?>
-							    </select>
-							<br /><br />
-							<b>อำเภอ :</b> <br />
-								<select id="district" name="district" >
-									<?php  require_once 'amp.php'; ?>
-								</select>	
-						</div>
-						<div id="col_search">
-							<b>ช่วงราคา : </b><br />
-								<input class="text" onclick="this.value='';" onblur="if(this.value==''){this.value='ราคาต่ำสุด'};" name="lowcost" type="text" value="ราคาต่ำสุด" />
-							<br /><br />
-							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ถึง <br />
-								<input class="text" onclick="this.value='';" onblur="if(this.value==''){this.value='ราคาสุงสุด'};" name="hicost" type="text" value="ราคาสูงสุด" />
-							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input class="button" id="submit" value="เริ่มค้นหา" type="submit">		
-						</div> 	
-        			</form>
-					<div id="clear"></div>
-				</div>
+<div class="search">
+	<div id="content_search">
+             <form method="" id="search_form" action="post_search.php">
+		<table width="100%" border="0" cellspacing="0" cellpadding="0">
+		  <tr>
+		   <td align="right">ประเภทอสังหาฯ : </td>
+		   <td align="left">
+                       <select name="type_id">
+                           <option value="">ทุกประเภท</option>
+                            <?php require_once 'class.php'; ?>
+                      </select>
+                   </td>
+			<td align="right">ประเภทประกาศ : </td>
+			<td align="left">
+                            <select name="class_id">
+                                <option value="">ทุกประกาศ</option>
+                                <?php require_once 'c_type.php'; ?>
+                            </select>
+                        </td>
+			</tr>
+		  <tr>
+		  <td align="right">จังหวัด : </td>
+			<td align="left">
+                            <select onchange="searchamp(this.value);"  name="province" >
+                                <option value="">ทุกจังหวัด</option>
+                                <?php require_once 'prov.php'; ?>
+                             </select>
+                        </td>
+			<td align="right">อำเภอ :</td>
+			<td align="left">
+                           <select id="district" name="district" >
+                             <?php require_once 'amp.php'; ?>
+                            </select>
+                        </td>
+		  </tr>
+		  <tr>
+			<td align="right">ช่วงราคาต่ำสุด : </td>
+			<td align="left">
+                            <input class="text" onclick="this.value='';" onblur="if(this.value==''){this.value='ราคาต่ำสุด'};" name="lowcost" type="text" value="ราคาต่ำสุด" />
+                        </td>
+			<td align="right">ถึงราคาสูงสุด : </td>
+			<td align="left">
+                            <input class="text" onclick="this.value='';" onblur="if(this.value==''){this.value='ราคาสุงสุด'};" name="hicost" type="text" value="ราคาสูงสุด" />
+                        </td>
+			</tr>
+		  <tr>
+			<td align="right">&nbsp;</td>
+			<td align="left">&nbsp;</td>
+			<td align="right">&nbsp;</td>
+			<td align="left">
+		     
+		        <input type="submit"  value="ค้นหา" />
+	         <div align="right"><a href="#" class="search_hide"><img src="images/topIcon.png" width="19" height="19"  border="0"/></a></div></td>
+			</tr>
+		</table>
+             </form>
+</div>    
+</div>
